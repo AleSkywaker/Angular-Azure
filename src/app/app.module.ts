@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 // Rutas
 import { APP_ROUTES } from './app.routing';
@@ -18,7 +19,7 @@ import { NotFoundComponent } from './component/not-found/not-found.component';
     NavbarComponent,
     NotFoundComponent
   ],
-  imports: [BrowserModule, APP_ROUTES],
+  imports: [BrowserModule, RouterModule, APP_ROUTES],
   providers: [],
   bootstrap: [AppComponent]
 })
