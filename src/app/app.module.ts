@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Rutas
+import { APP_ROUTES } from './app.routing';
+
 import { AppComponent } from './app.component';
 import { InicioComponent } from './component/inicio/inicio.component';
 import { AcercaComponent } from './component/acerca/acerca.component';
@@ -15,10 +18,8 @@ import { NotFoundComponent } from './component/not-found/not-found.component';
     NavbarComponent,
     NotFoundComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, APP_ROUTES],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
